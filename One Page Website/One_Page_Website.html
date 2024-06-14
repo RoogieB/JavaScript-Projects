@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/one_page_website.css">
+	<script src="JS/one_page_website.js" defer></script>
+	<title>Stardew Valley Wiki</title>
+</head>
+<body>
+	<h1>Stardew Valley Wiki</h1>
+	<p>All the information you need!</p>
+	<!-- NAV -->
+	<ul>
+		<a href="#home" id="link"><li>HOME</li></a>
+		<a href="#form"><li>FORM</li></a>	
+		<a href="#footer" id="link"><li>FOOTER</li></a>
+		<a href="#trailer" id="link"><li>TRAILER</li></a>
+	</ul>
+	<!-- END NAV -->
+
+	<!-- IMAGE SECTION -->
+	<section id="home">
+		<img src="stardew_intro.png" width="50%" alt="image of stardew valley game">
+	</section>
+
+	<!-- Images used to open the lightbox -->
+	<div class="row">
+		<div class="column">
+			<img src="200px-Forest_Farm_thumb.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+		<img src="200px-Hilltop_Farm_thumb.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="column">
+		<img src="200px-Riverlands_Farm_thumb.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+		</div>
+		<div class="column">
+		<img src="200px-Standard_Farm_thumb.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+		</div>
+	</div>
+
+	<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+	
+		<div class="mySlides">
+			<div class="numbertext">1 / 4</div>
+			<img src="200px-Forest_Farm_thumb_wide.png" style="width:100%">
+		</div>
+	
+		<div class="mySlides">
+			<div class="numbertext">2 / 4</div>
+			<img src="200px-Hilltop_Farm_thumb_wide.png" style="width:100%">
+		</div>
+	
+		<div class="mySlides">
+			<div class="numbertext">3 / 4</div>
+			<img src="200px-Riverlands_Farm_thumb_wide.png" style="width:100%">
+		</div>
+	
+		<div class="mySlides">
+			<div class="numbertext">4 / 4</div>
+			<img src="200px-Standard_Farm_thumb_wide.png" style="width:100%">
+	  </div>
+
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  
+		<!-- Caption text -->
+		<div class="caption-container">
+		<p id="caption"></p>
+
+		<!-- Thumbnail image controls -->
+		<div class="column">
+			<img class="demo" src="200px-Forest_Farm_thumb.png" onclick="currentSlide(1)" alt="Forest">
+		  </div>
+	  
+		  <div class="column">
+			<img class="demo" src="200px-Hilltop_Farm_thumb.png" onclick="currentSlide(2)" alt="Hilltop">
+		  </div>
+	  
+		  <div class="column">
+			<img class="demo" src="200px-Riverlands_Farm_thumb.png" onclick="currentSlide(3)" alt="River Lands">
+		  </div>
+	  
+		  <div class="column">
+			<img class="demo" src="200px-Standard_Farm_thumb.png" onclick="currentSlide(4)" alt="Standard Farm">
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- END IMAGE SECTION -->
+	
+	<!-- FORM -->
+	<section id="form">
+		<div class="container">
+			<form action="" method="get">
+				First name: <input class="inputs" type="text" name="First_Name"><br>
+				last name: <input class="inputs" type="text" name="Last_Name"><br>
+				Email: <input class="inputs" type="email" name="Email"><br>
+				Password: <input class="inputs" type="password" name="Password"><br>
+			<input type="submit" value="Submit">
+			</form>
+		</div>
+	</section>
+	<!-- END FORM -->
+	
+	<!-- VIDEO SECTION -->
+	<div id="trailer">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ot7uXNQskhs?si=DCQI0ZzedSlo5vcz" 
+		title="YouTube video player" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+		</iframe>
+	</div>
+	
+	<!-- END VIDEO SECTION -->
+	
+	<!-- FOOTER SECTION -->
+	<section id="footer">
+		<div>
+			www.stardewwiki.com &nbsp;|&nbsp; &copy; 2024
+		</div>
+	</section>
+	<!-- END FOOTER SECTION -->
+</body>
+</body>
