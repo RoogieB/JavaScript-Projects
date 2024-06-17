@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>jQuery</title>
+</head>
+    <script>
+        //targeting the document and adding the dom elements to the html with the function append
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                     <div id='container'>\
+                         <div id='inner'>\
+                             <h1>Basic jQuery</h1>\
+                             <p id='1'>Paragraph 1</p>\
+                             <p id='2'>Paragraph 2</p>\
+                             <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            //slowly hiding paragraph 1
+            $("#1").hide(1500);
+            //making the second paragraph have the color red
+            $("#2").css({"color":"red"})
+            //on click on paragraph 3 it will hide the h1 elements
+            $("#3").click(function(){
+                $("h1").hide();
+            });
+        });
+    </script>
+</html>
